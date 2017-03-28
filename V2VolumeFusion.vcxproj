@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E70C5E08-5B7D-4EA6-9FB3-33BE5159EC89}</ProjectGuid>
+    <RootNamespace>V2VolumeFusion</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(QTDIR)\include;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtOpenGL;$(VTKDIR510)\include\vtk-5.10;C:\Program Files %28x86%29\boost\boost_1_47</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(VTKDIR510)\lib\vtk-5.10;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>vtkVolumeRendering.lib;vtkRendering.lib;vtkIO.lib;vtkDICOMParser.lib;vtkNetCDF_cxx.lib;vtkNetCDF.lib;vtkmetaio.lib;vtksqlite.lib;vtkpng.lib;vtktiff.lib;vtkzlib.lib;vtkjpeg.lib;vtkexpat.lib;vtkGraphics.lib;vtkverdict.lib;vtkImaging.lib;vtkFiltering.lib;vtkCommon.lib;vtksys.lib;vtkftgl.lib;vtkfreetype.lib;opengl32.lib;d3d9.lib;wbemuuid.lib;QtGui4.lib;QtSql4.lib;QtCore4.lib;QtOpenGL4.lib;QVTK.lib;vtkWidgets.lib;vtkViews.lib;vtkHybrid.lib;vtkexoIIc.lib;comctl32.lib;wsock32.lib;ws2_32.lib;vtklibxml2.lib;vtkalglib.lib;vtkInfovis.lib;%(AdditionalDependencies);kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:\VTK Installation 5.10\include\vtk-5.10;C:\Program Files %28x86%29\boost\boost_1_47;$(QTDIR)\include;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\VTK Installation 5.10\lib\vtk-5.10;$(QTDIR)\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>vtkVolumeRendering.lib;vtkRendering.lib;vtkIO.lib;vtkDICOMParser.lib;vtkNetCDF_cxx.lib;vtkNetCDF.lib;vtkmetaio.lib;vtksqlite.lib;vtkpng.lib;vtktiff.lib;vtkzlib.lib;vtkjpeg.lib;vtkexpat.lib;vtkGraphics.lib;vtkverdict.lib;vtkImaging.lib;vtkFiltering.lib;vtkCommon.lib;vtksys.lib;vtkftgl.lib;vtkfreetype.lib;opengl32.lib;d3d9.lib;wbemuuid.lib;QVTK.lib;vtkWidgets.lib;vtkViews.lib;vtkHybrid.lib;vtkexoIIc.lib;comctl32.lib;wsock32.lib;ws2_32.lib;vtklibxml2.lib;vtkalglib.lib;vtkInfovis.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;QtGui4.lib;QtCore4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ColorSegment.h" />
+    <ClInclude Include="Fusion.h" />
+    <ClInclude Include="Hermite.h" />
+    <ClInclude Include="mainwindow.ui">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic C:\ProyectoIXTLI\V2VolumeFusion\V2VolumeFusion\mainwindow.ui  -o C:\ProyectoIXTLI\V2VolumeFusion\V2VolumeFusion\ui_mainwindow.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building uic's</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\ProyectoIXTLI\V2VolumeFusion\V2VolumeFusion\ui_mainwindow.h</Outputs>
+      <FileType>Document</FileType>
+    </ClInclude>
+    <ClInclude Include="matrixC.h" />
+    <ClInclude Include="RGBSegment.h" />
+    <ClInclude Include="selectorCoefDHT.h" />
+    <ClInclude Include="ui_mainwindow.h" />
+    <ClInclude Include="ui_RangeSelector.h" />
+    <ClInclude Include="ui_RGBSegment.h" />
+    <ClInclude Include="ui_selectorCoefDHT.h" />
+    <ClInclude Include="vtkBoxWidgetCallback.h" />
+    <CustomBuild Include="projectwizard.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(InputPath)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+    </CustomBuild>
+    <CustomBuild Include="RangeSelector.h">
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(InputPath)</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ColorSegment.cpp" />
+    <ClCompile Include="Fusion.cpp" />
+    <ClCompile Include="GeneratedFiles\qrc_.cpp" />
+    <ClCompile Include="Hermite.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="matrixC.cpp" />
+    <ClCompile Include="moc_mainwindow.cpp" />
+    <ClCompile Include="moc_projectwizard.cpp" />
+    <ClCompile Include="moc_RangeSelector.cpp" />
+    <ClCompile Include="moc_RGBSegment.cpp" />
+    <ClCompile Include="moc_selectorCoefDHT.cpp" />
+    <ClCompile Include="projectwizard.cpp" />
+    <ClCompile Include="RangeSelector.cpp" />
+    <ClCompile Include="RGBSegment.cpp" />
+    <ClCompile Include="selectorCoefDHT.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mainwindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="projectwizard.qrc">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\rcc.exe ".\projectwizard.qrc" -o ".\GeneratedFiles\qrc_$(InputName).cpp" -name "$(InputName)" -no-compress "$(InputPath)"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\qrc_$(InputName).cpp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc'ing $(InputFileName)...</Message>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(InputPath)</AdditionalInputs>
+      <FileType>Document</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="RangeSelector.qrc">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\rcc.exe ".\RangeSelector.qrc" -o ".\qrc_RangeSelector.cpp"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\qrc_RangeSelector.cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc'ing RangeSelector...</Message>
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <ClInclude Include="RangeSelector.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc'ing $(InputFileName)...</Message>
+      <FileType>Document</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RGBSegment.ui" />
+    <None Include="selectorCoefDHT.ui" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

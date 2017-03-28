@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Interface Files">
+      <UniqueIdentifier>{ab9f5e51-294a-4edf-9903-e3447797c66c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface Files\Source Files">
+      <UniqueIdentifier>{4cce0deb-070f-406f-8a04-015598553eae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface Files\MOC Files">
+      <UniqueIdentifier>{e6b9ce01-aa7d-4c1d-829f-e79d5bcb1946}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface Files\Header Files">
+      <UniqueIdentifier>{b185f2d5-334b-45cb-86dd-4559abd9710a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface Files\UI Files">
+      <UniqueIdentifier>{cce7273a-f733-4f16-a748-d5a2c71cefd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface Files\Header UI Files">
+      <UniqueIdentifier>{ce9bbd93-eb2c-4c83-8c2c-3976be7e6920}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Interface Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>Interface Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="projectwizard.cpp">
+      <Filter>Interface Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_projectwizard.cpp">
+      <Filter>Interface Files\MOC Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RangeSelector.cpp">
+      <Filter>Interface Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_RangeSelector.cpp">
+      <Filter>Interface Files\MOC Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RGBSegment.cpp">
+      <Filter>Interface Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorSegment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_RGBSegment.cpp">
+      <Filter>Interface Files\MOC Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Fusion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Hermite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="matrixC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="selectorCoefDHT.cpp">
+      <Filter>Interface Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_mainwindow.cpp">
+      <Filter>Interface Files\MOC Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_selectorCoefDHT.cpp">
+      <Filter>Interface Files\MOC Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mainwindow.h">
+      <Filter>Interface Files\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mainwindow.ui">
+      <Filter>Interface Files\UI Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RangeSelector.ui">
+      <Filter>Interface Files\UI Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_RangeSelector.h">
+      <Filter>Interface Files\Header UI Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RGBSegment.h">
+      <Filter>Interface Files\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorSegment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_RGBSegment.h">
+      <Filter>Interface Files\Header UI Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Fusion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Hermite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="matrixC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vtkBoxWidgetCallback.h">
+      <Filter>Interface Files\Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="selectorCoefDHT.h">
+      <Filter>Interface Files\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_selectorCoefDHT.h">
+      <Filter>Interface Files\Header UI Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_mainwindow.h">
+      <Filter>Interface Files\Header UI Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="projectwizard.h">
+      <Filter>Interface Files\Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RangeSelector.h">
+      <Filter>Interface Files\Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="projectwizard.qrc">
+      <Filter>Interface Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RangeSelector.qrc">
+      <Filter>Interface Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RGBSegment.ui">
+      <Filter>Interface Files\UI Files</Filter>
+    </None>
+    <None Include="selectorCoefDHT.ui">
+      <Filter>Interface Files\UI Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

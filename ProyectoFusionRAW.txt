@@ -1,0 +1,17 @@
+raw
+CT_Raw\\CT-%d.raw
+320
+320
+1
+1
+2
+1
+89
+RM_reg_CT_Raw\\RM_reg_CT-%d.raw
+320
+320
+1
+1
+2
+1
+89

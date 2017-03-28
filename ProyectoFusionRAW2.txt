@@ -1,0 +1,17 @@
+raw
+PiramideA\\pira-%d.raw
+232
+309
+1
+1
+2
+1
+50
+esfera\\sphere-%d.raw
+232
+309
+1
+1
+2
+1
+49
